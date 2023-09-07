@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #f5f5f5;
+    max-width: 450px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.todo-box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.inputbox {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border-radius: 5px;
+    background: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.inputbox input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.icon {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #555;
+}
+
+#addbutton {
+    display: none;
+}
+
+.clckbutton {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted #ccc;
+    margin: 20px 0;
+}
+
+.itemlist li {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.itemlist li .del {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #e74c3c;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.itemlist li:hover .del {
+    color: #c0392b;
+}
+
+.pendingTasks .del.uil-trash-alt {
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.itemlist li:hover .del.uil-trash-alt {
+    color: #c0392b;
+}
+
+.complete, .uncomplete {
+    cursor: pointer;
+    font-weight: 600;
+    color: #27ae60;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.complete:hover, .uncomplete:hover {
+    color: #219a52;
+}
+
+.clearall, .clearcomtask {
+    cursor: pointer;
+    font-weight: 600;
+    color: #e74c3c;
+    transition: color 0.3s ease;
+}
+
+.clearall:hover, .clearcomtask:hover {
+    color: #c0392b;
+}
+
+.itemlist li .del {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    font-size: 20px;
+    color: #e74c3c;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.itemlist li:hover .del {
+    color: #c0392b;
+}
